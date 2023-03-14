@@ -1,5 +1,6 @@
-
-
+Hello the four main files I made index.js, objects.js, index.html, and style.css.
+objects.js holds all the geometry and the on the roads and are roads, index.js is 
+the main driver of the project.
 
 
 ------------------------------
