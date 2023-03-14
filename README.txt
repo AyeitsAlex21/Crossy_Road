@@ -5,6 +5,9 @@
 ------------------------------
 Notes for me
 
+For local development
+1. npm run dev
+
 For gh pages
 make sure you do the gh-pages
 
