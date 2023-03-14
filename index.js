@@ -46,7 +46,7 @@ function incrementScore() {
 }
 
 function showGameoverScreen() {
-  if(canDie){
+  if(canDie && !dead){
     dead = true
     gameover_screen.style.display = "flex";
     score_span.textContent = current_score;
