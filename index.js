@@ -174,9 +174,9 @@ class Scene {
     }
 
     // reset pos
+    camera.position.y = UNITSIZE * .2;
     camera.position.x = 0
     camera.position.z = 0
-    camera.position.y = UNITSIZE * .2;
 
     // look forward when reseting
     camera.rotation.x = -Math.PI/2
@@ -290,6 +290,8 @@ class Scene {
     // check if collided with anyting in current z posision
     var LaneInd = Math.abs(Math.floor((camera.position.z + ROADWIDTH / 2) / ROADWIDTH))
 
+    camera.position.y = UNITSIZE * .2;
+
     if(current_score < ROADNUM / 2 && current_score < LaneInd){ 
       // INCREMENTING SCORE BEFORE SHIFT
       incrementScore()
@@ -399,6 +401,7 @@ const loop = () => {
   window.requestAnimationFrame(loop)
 
   if(delta > FPS){
+
     for(let i = 0; i < ROADNUM; i++){
       current_scene_list[i].update(delta)
     }
