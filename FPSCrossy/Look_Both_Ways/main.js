@@ -7,6 +7,8 @@ let camera, scene, renderer, canvas, sizes, controls, clock, sunDirectionalLight
 var UNITSIZE = 200;
 export const FPS = 1/60
 
+const canDie = true
+
 export var current_scene_list = []
 var ROADNUM = 100;
 export var ROADWIDTH = 60;
@@ -41,8 +43,10 @@ function incrementScore() {
 }
 
 function showGameoverScreen() {
-  gameover_screen.style.display = "flex";
-  score_span.textContent = current_score;
+  if(canDie){
+    gameover_screen.style.display = "flex";
+    score_span.textContent = current_score;
+  }
 }
 
 // Add event listener to retry button
