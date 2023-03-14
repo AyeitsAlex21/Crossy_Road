@@ -37,12 +37,16 @@ var current_score = 0
 var gameover_screen = document.getElementById("gameover-screen");
 var score_span = document.getElementById("score");
 
+var dead = false
+
 function incrementScore() {
-  current_score += 1
+  if(dead)
+    current_score += 1
   document.getElementById("counter").innerHTML = current_score
 }
 
 function showGameoverScreen() {
+  dead = true
   if(canDie){
     gameover_screen.style.display = "flex";
     score_span.textContent = current_score;
@@ -185,6 +189,7 @@ class Scene {
 
     // reset score
     current_score = 0
+    dead = false
     document.getElementById("counter").innerHTML = current_score
 
     // reset sun and backdrop
