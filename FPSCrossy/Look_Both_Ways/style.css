@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+*{ /* get rid of white outline */
+  margin: 0;
+  padding: 0;
+  box-sizing: "border-box";
+}
+
+#counter {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#gameover-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#gameover-screen h1 {
+  font-size: 4em;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+#gameover-screen p {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#gameover-screen button {
+  font-size: 2em;
+  background-color: white;
+  color: black;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: white;
+}
+html{
+  overflow-x:hidden;
+}

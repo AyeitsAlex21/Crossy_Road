@@ -1,0 +1,5 @@
+WIDTH = 640
+HEIGHT = 480
+
+BLACK = (0, 0, 0)
+WHITE = (200, 200, 200)
