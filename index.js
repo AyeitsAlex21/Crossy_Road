@@ -7,7 +7,7 @@ let camera, scene, renderer, canvas, sizes, controls, clock, sunDirectionalLight
 var UNITSIZE = 200;
 export const FPS = 1/60
 
-const canDie = true
+const canDie = true;
 var dead = false;
 
 export var current_scene_list = []
@@ -193,11 +193,13 @@ class Scene {
     document.getElementById("counter").innerHTML = current_score
 
     // reset sun and backdrop
+    /*
     SunCurrent = 0
     backgroundColor1 = backgroundSun1
     backgroundColor2 = backgroundSun2
     color1 = Sun1
     color2 = Sun2
+    */
 
     //camera.lookAt(new THREE.Vector3(0, 0, 0));
   }
