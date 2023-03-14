@@ -8,6 +8,7 @@ var UNITSIZE = 200;
 export const FPS = 1/60
 
 const canDie = true
+var dead = false;
 
 export var current_scene_list = []
 var ROADNUM = 100;
@@ -37,17 +38,16 @@ var current_score = 0
 var gameover_screen = document.getElementById("gameover-screen");
 var score_span = document.getElementById("score");
 
-var dead = false
-
 function incrementScore() {
-  if(dead)
+  if(!dead){
     current_score += 1
-  document.getElementById("counter").innerHTML = current_score
+    document.getElementById("counter").innerHTML = current_score
+  }
 }
 
 function showGameoverScreen() {
-  dead = true
   if(canDie){
+    dead = true
     gameover_screen.style.display = "flex";
     score_span.textContent = current_score;
   }
@@ -295,8 +295,6 @@ class Scene {
     // check if collided with anyting in current z posision
     var LaneInd = Math.abs(Math.floor((camera.position.z + ROADWIDTH / 2) / ROADWIDTH))
 
-    camera.position.y = UNITSIZE * .2;
-
     if(current_score < ROADNUM / 2 && current_score < LaneInd){ 
       // INCREMENTING SCORE BEFORE SHIFT
       incrementScore()
@@ -406,7 +404,7 @@ const loop = () => {
   window.requestAnimationFrame(loop)
 
   if(delta > FPS){
-
+    camera.position.y = UNITSIZE * .2
     for(let i = 0; i < ROADNUM; i++){
       current_scene_list[i].update(delta)
     }
