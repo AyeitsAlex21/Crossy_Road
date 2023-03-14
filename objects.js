@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import './style.css'
-import { ROADWIDTH, ROADLENGTH, pickRandom } from './main.js';
+import { ROADWIDTH, ROADLENGTH, pickRandom } from './index.js';
 
 var row_types = [Grass, Road]
 var road_objs = [Car];
