@@ -227,7 +227,9 @@ class Scene {
     const angle = (SunCurrent / SunRotTime) * Math.PI;
     const sunY = SunMaxY * Math.sin(angle);
     const sunX = (ROADLENGTH / 2) * Math.cos(angle);
-    sunDirectionalLight.position.set(sunX, sunY, -ROADWIDTH * ROADNUM * (3 / 4));
+    const sunZ = (camera.position.z - ROADWIDTH * ROADNUM * (3 / 4))
+    console.log(sunZ + " " + camera.po)
+    sunDirectionalLight.position.set(sunX, sunY, sunZ);
   
     const startColor = new THREE.Color(color1);
     const endColor = new THREE.Color(color2);
