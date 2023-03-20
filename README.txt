@@ -1,4 +1,4 @@
-WEBSITE:
+WEBSITE TO PLAY GAME:
 https://ayeitsalex21.github.io/Crossy_Road/
 
 GITHUB:
