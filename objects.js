@@ -8,8 +8,8 @@ var grass_objs = [RoundTree, Stump, Bush, Rock];
 
 var FOLIAGE_DENSITY = 100
 
-const BASE_CAR_SPEED = 300
-const EXTRA_CAR_SPEED = 700
+const BASE_CAR_SPEED = 150
+const EXTRA_CAR_SPEED = 400
 const CAR_SPAWN_RATE = 0.007
 
 export class Lane {
