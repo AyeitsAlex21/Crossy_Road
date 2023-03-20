@@ -63,6 +63,7 @@ export class Lane {
                 var new_car = new Car();
                 new_car.castShadow = true;
 
+
                 new_car.position.x = -this.dir * (ROADLENGTH / 2 + 20)
                 new_car.position.z = -(this.index * ROADWIDTH)
                 this.objsInRow.push(new_car)

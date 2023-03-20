@@ -1,6 +1,9 @@
 WEBSITE:
 https://ayeitsalex21.github.io/Crossy_Road/
 
+GITHUB:
+https://github.com/AyeitsAlex21/Crossy_Road
+
 This is a first person crossy road I made in threejs. Everything is made locally in threejs,
 built ins I used would be the camera controls, everything else including collision,
 shapes, animation, lighting, etc. I made myself without the help of a library on threejs. Note: shading is
