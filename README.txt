@@ -14,7 +14,6 @@ The four main files I made index.js, objects.js, index.html, and style.css.
 objects.js holds all the geometry and the on the roads and are roads, index.js is 
 the main driver of the project.
 
-Credits for a guide on how to make car model: https://www.freecodecamp.org/news/three-js-tutorial/ 
 ------------------------------
 Notes for me
 
